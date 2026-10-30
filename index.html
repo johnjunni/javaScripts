@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="smple.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>JavaScript Practice Tasks</h1>
+    </header>
+    <main class="container">
+        <!-- Task 1 -->
+        <section class="card">
+            <h2>1. Age to Days Converter</h2>
+            <label for="age">Enter your age in years:</label>
+            <input type="number" id="age" placeholder="Age" min="0" step="any">
+            <button onclick="ageTodays ()">Convert to Days</button>
+            <p id="ageResult" class="result">Result will appear here.</p>
+        </section>
+        <!-- 2nd task -->
+        <section class="card">
+            <h2>2. Hours To Seconds</h2>
+            <label for="age">Enter Hours:</label>
+            <input type="number" id="hours" placeholder="Hours" min="0" step="any">
+            <button onclick="hoursToSecond()">Convert to Days</button>
+            <p id="hoursResult" class="result">Result will appear here.</p>
+        </section>
+
+        <!-- 3rd task -->
+        <section class="card">
+            <h2>3. Find the Next Number</h2>
+
+            <h3>Scenario A: Find a number in an array</h3>
+            <p>Example array: [10, 20, 30, 40, 50]</p>
+            <label for="arrayNumber">Enter a number to search:</label>
+            <input type="number" id="arrayNumber" placeholder="e.g. 20" step="any">
+            <button onclick="findNextInArray()">Find Next Array Element</button>
+            <p id="arrayResult" class="result">Result will appear here.</p>
+
+            <hr>
+
+            <h3>Scenario B: Integer or Float</h3>
+            <label for="singleNumber">Enter an integer or decimal:</label>
+            <input type="number" id="singleNumber" placeholder="e.g. 5 or 5.5" step="any">
+            <button onclick="findNextNumber()">Find Next Number</button>
+            <p id="nextResult" class="result">Result will appear here.</p>
+        </section>
+
+        <!-- 4th Task -->
+
+        <section class="card">
+            <h2>4. Capitalize the First Letter</h2>
+            <label for="userName">Enter your name in lowercase:</label>
+            <input type="text" id="userName" placeholder="e.g. junaid">
+            <button onclick="capitalizeName()">Capitalize Name</button>
+            <p id="nameResult" class="result">Result will appear here.</p>
+        </section>
+
+        <!-- 5ht Task -->
+
+        <section class="card">
+            <h2>5. BMI Calculator</h2>
+            <label for="weight">Weight in kilograms:</label>
+            <input type="number" id="weight" placeholder="e.g. 70" min="0" step="any">
+
+            <label for="height">Height in meters:</label>
+            <input type="number" id="height" placeholder="e.g. 1.75" min="0" step="any">
+
+            <button onclick="calculateBMI()">Calculate BMI</button>
+            <p id="bmiResult" class="result">Result will appear here.</p>
+        </section>
+        <!-- 6th Task -->
+        <section class="card">
+            <h2>6. Random Array: First and Last Element</h2>
+            <button onclick="generateArray()">Generate Random Array</button>
+            <p id="randomArray" class="result">Array will appear here.</p>
+            <p id="arrayEnds" class="result">First and last elements will appear here.</p>
+        </section>
+
+        <!-- 7th task -->
+        <section class="card">
+            <h2>7. Addition Using Event Handling</h2>
+            <p>Enter integers in the first two boxes.</p>
+
+            <label for="num1">First Number:</label>
+            <input type="number" id="num1" step="1" placeholder="Enter first integer">
+
+            <label for="num2">Second Number:</label>
+            <input type="number" id="num2" step="1" placeholder="Enter second integer">
+
+            <label for="sum">Sum:</label>
+            <input type="text" id="sum" placeholder="Result appears here" readonly>
+            <p class="hint">The result initially displays NaN. Enter the second integer to calculate the sum.</p>
+        </section>
+
+    </main>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

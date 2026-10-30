@@ -1,0 +1,133 @@
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #0c0c0c;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #1e3c8f;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(26, 25, 25, 0.18);
+    min-width: 0;
+}
+
+.card h2 {
+    color: #1e3a8a;
+    font-size: 21px;
+    margin-bottom: 16px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 16px 0 10px;
+}
+
+.card label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Inputs */
+.card input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.card input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.12);
+}
+
+/* Buttons */
+.card button {
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Results */
+.result {
+    margin-top: 14px;
+    padding: 10px;
+    background-color: #eff6ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+}
+
+.hint {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.card hr {
+    margin: 22px 0;
+    border: none;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
